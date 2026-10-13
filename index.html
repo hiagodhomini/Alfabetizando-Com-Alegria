@@ -1,8 +1,17 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Alfabetizando com Alegria</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap">
 <style>
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
 /* Layout: faixas de largura total sobre colunas de 1080px; hero assimétrico com a capa inclinada, sequência do caderno em lista por intervalo de páginas. */
 :root {
   --bg: #fff7e3;
@@ -65,6 +74,7 @@ h2 { font-size: clamp(28px, 4.6vw, 42px); font-weight: 800; }
 .mark span:nth-child(5n+3) { color: var(--green); } .mark span:nth-child(5n+4) { color: var(--blue); }
 .mark span:nth-child(5n+5) { color: var(--purple); }
 .top .cta { font-size: 15px; padding: 10px 20px; box-shadow: none; }
+.top .cta { white-space: nowrap; }
 
 /* hero */
 .hero { padding-block: clamp(36px, 7vw, 76px); position: relative; overflow: hidden; }
@@ -201,11 +211,14 @@ footer .wrap { display: grid; gap: 6px; }
   body { font-size: 17px; }
   .ages { grid-template-columns: 1fr; }
   .top .cta { padding: 9px 14px; font-size: 14px; }
-  .mark { font-size: 15px; }
+  .mark { font-size: 13px; }
   .cta.big { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .cta { transition: none; } }
 </style>
+</head>
+<body>
+
 
 <header class="top">
   <div class="wrap">
@@ -442,3 +455,6 @@ footer .wrap { display: grid; gap: 6px; }
     document.querySelectorAll(".js-buy").forEach(function (a) { a.href = HOTMART_LINK; a.target = "_blank"; a.rel = "noopener"; });
   }
 </script>
+
+</body>
+</html>
